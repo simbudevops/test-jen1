@@ -2,7 +2,7 @@ pipeline
 {
 
 agent {
-  label 'DevServer'
+  label 'jenkins-agent1'
 }
 
 parameters {
@@ -13,7 +13,7 @@ environment{
     NAME = "piyush"
 }
 tools {
-  maven 'mymaven'
+  maven 'maven'
 }
 
 stages{
