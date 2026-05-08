@@ -72,7 +72,7 @@ stages{
             }
             sh """
             cd /var/www/html/
-            jar -xvf webapp.war
+            unzip -o webapp.war
             """
         }
     }
@@ -96,9 +96,11 @@ stages{
             }
             sh """
             cd /var/www/html/
-            jar -xvf webapp.war
+            unzip -o webapp.war
             """
         }  
     }
+   
+    
 }
 }
